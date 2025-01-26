@@ -1,0 +1,4 @@
+{
+    "access_token": "your-access-token-here",
+    "api_base_url": "your-mastodon-base-URL-here"
+}
