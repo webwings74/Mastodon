@@ -1,2 +1,2 @@
 # Mastodon
- Om iets op Mastodon te plaatsen.
+Een heel klein projectje om een bericht, eventueel met een afbeelding, op Mastodon te plaatsen. Niet meer, niets minder.
