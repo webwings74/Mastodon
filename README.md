@@ -3,7 +3,7 @@ Een heel klein projectje om een bericht, eventueel met een afbeelding, op Mastod
 
 ## Afhankelijkheden
 * config.json voor de toegangsgegevens van de Mastodon gebruiker.
-* mastodon Python module. Deze is in de (virtuele) omgeving te installeren via '''pip3 install Mastodon.py'''
+* mastodon Python module. Deze is in de (virtuele) omgeving te installeren via ```pip3 install Mastodon.py```
 
 ### Bestanden
 * PostMastodon.py is een klein voorbeeldprogramma waarin een tekstbericht wordt gevraagd en daarna kan eventueel een pad naar een afbeelding worden opgegeven om dit dan te plaatsen op Mastodon.
