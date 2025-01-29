@@ -1,5 +1,5 @@
 # Mastodon
-Een heel klein projectje om een bericht, eventueel met een afbeelding, op Mastodon te plaatsen. Niet meer, niets minder.
+Een heel klein projectje om een bericht, eventueel met een afbeelding, op Mastodon te plaatsen. Niet meer, niets minder. In eerste instantie via input in de applicatie. Ook een versie nodig die via de command-line een invoer kan hebben.
 
 ## Afhankelijkheden
 * config.json voor de toegangsgegevens van de Mastodon gebruiker.
