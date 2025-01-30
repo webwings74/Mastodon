@@ -11,4 +11,4 @@ Een heel klein projectje om een bericht, eventueel met een afbeelding, op Mastod
 * mastodon-venv is de virtuele omgeving van Python, in dit geval versie 3.12, waaraan de Mastodon module is toegevoegd.
 
 ## Virtuele Python omgeving
-Het starten van een virtuele Python omgeving op MacOD: ```source mastodon-venv/bin/activate```.
+Het starten van een virtuele Python omgeving op MacOS: ```source mastodon-venv/bin/activate```.
