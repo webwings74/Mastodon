@@ -3,7 +3,7 @@ import sys
 from mastodon import Mastodon
 
 # Stap 1: Laad de API-credentials uit config.json
-with open("config.json", "r") as config_file:
+with open("secret.json", "r") as config_file:
     config = json.load(config_file)
 
 mastodon = Mastodon(
