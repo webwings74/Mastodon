@@ -1,9 +1,12 @@
+# Bericht plaatsen op Mastodon, inclusief via de terminal & command-line
+# bijvoorbeeld: python3 PutMastodon.py "$(pip list)" stuurt een bericht met de uitvoer van het commando pip list 
+
 import json
 import sys
 from mastodon import Mastodon
 
 # Stap 1: Laad de API-credentials uit config.json
-with open("secret.json", "r") as config_file:
+with open("secrets.json", "r") as config_file:
     config = json.load(config_file)
 
 mastodon = Mastodon(
