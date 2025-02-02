@@ -3,3 +3,4 @@ secrets.json
 /mastodon-env/
 /mastodon-venv/
 /@eaDir/
+.venv
