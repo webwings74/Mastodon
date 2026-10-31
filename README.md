@@ -1,15 +1,15 @@
 # Mastodon
-Een heel klein projectje om een bericht, eventueel met een afbeelding, op Mastodon te plaatsen. Niet meer, niets minder. In eerste instantie via input in de applicatie. Ook een versie nodig die via de command-line een invoer kan hebben.
+A very small project to post a message, optionally with an image, to Mastodon. Nothing more, nothing less. Initially through input in the application. A version that accepts input from the command line is also needed.
 
-## Afhankelijkheden
-* **config.json** voor de toegangsgegevens van de Mastodon gebruiker.
-* **mastodon Python module** dient in de (virtuele) omgeving geïnstallert te worden met ```pip3 install Mastodon.py```
+## Dependencies
+* **config.json** for the Mastodon user's access credentials.
+* **mastodon Python module** must be installed in the (virtual) environment with ```pip3 install Mastodon.py```
 
-## Bestanden
-* **PostMastodon.py** is een klein voorbeeldprogramma waarin een tekstbericht wordt gevraagd en daarna kan eventueel een pad naar een afbeelding worden opgegeven om dit dan te plaatsen op Mastodon.
-* **PutMastodon.py** tweede "versie" van het programma dat ook d.m.v. een argument op de command-line iets kan plaatsen op Mastodon.
-* **config.json** heeft de API gegevens van de gebruiker, deze dient bijgewerkt te worden met de eigen gebruikers gegevens en worden hernoemd naar **secrets.json**
+## Files
+* **PostMastodon.py** is a small example program that asks for a text message, then optionally a path to an image, and posts it to Mastodon.
+* **PutMastodon.py** is a second "version" of the program that can also post to Mastodon using a command-line argument.
+* **config.json** holds the user's API credentials. Update it with your own credentials and rename it to **secrets.json**.
 
-## Virtuele Python omgeving
-Een virtuele omgeving kun je op de MacOS eenvoudig aanmaken met: ```python3 -m venv mastodon-venv```.
-Het starten van een virtuele Python omgeving op MacOS: ```source mastodon-venv/bin/activate```.
+## Python virtual environment
+On macOS you can easily create a virtual environment with: ```python3 -m venv mastodon-venv```.
+To activate the Python virtual environment on macOS: ```source mastodon-venv/bin/activate```.

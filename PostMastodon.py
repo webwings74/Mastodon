@@ -1,11 +1,11 @@
-# Plaatsen van een simpel bericht op Mastodon, eventueel inclusief een afbeelding.
+# Post a simple message to Mastodon, optionally including an image.
 # (C)2025 Richard, webwings.nl
 
 import json
 from mastodon import Mastodon
 
-# Stap 1: Laad de API-credentials uit een apart configuratiebestand
-# Verander secret.json in config.json en bewerk config.json met eigen API gegevens.
+# Step 1: Load the API credentials from a separate configuration file
+# Copy config.json to secret.json and edit it with your own API credentials.
 with open("secret.json", "r") as config_file:
     config = json.load(config_file)
 
@@ -14,21 +14,21 @@ mastodon = Mastodon(
     api_base_url=config["api_base_url"]
 )
 
-# Stap 2: Vraag de gebruiker om een bericht en optionele afbeelding in te voeren
-bericht = input("Voer het bericht in dat je wilt posten op Mastodon: ")
-afbeelding_pad = input("Voer het pad naar de afbeelding in (laat leeg als je geen afbeelding wilt uploaden): ")
+# Step 2: Ask the user for a message and an optional image
+message = input("Enter the message you want to post on Mastodon: ")
+image_path = input("Enter the path to the image (leave empty if you don't want to upload an image): ")
 
-# Stap 3: Upload de afbeelding (indien opgegeven)
+# Step 3: Upload the image (if provided)
 media_id = None
-if afbeelding_pad:
+if image_path:
     try:
-        media = mastodon.media_post(afbeelding_pad)
+        media = mastodon.media_post(image_path)
         media_id = media['id']
-        print("Afbeelding succesvol geüpload!")
+        print("Image uploaded successfully!")
     except Exception as e:
-        print(f"Er is een fout opgetreden bij het uploaden van de afbeelding: {e}")
+        print(f"An error occurred while uploading the image: {e}")
 
-# Stap 4: Plaats het bericht (met of zonder afbeelding)
-mastodon.status_post(bericht, media_ids=[media_id] if media_id else None)
+# Step 4: Post the message (with or without image)
+mastodon.status_post(message, media_ids=[media_id] if media_id else None)
 
-print("Bericht geplaatst!")
+print("Message posted!")

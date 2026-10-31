@@ -1,8 +1,8 @@
 import json
 from mastodon import Mastodon
 
-# Stap 1: Laad de API-credentials uit een apart configuratiebestand
-# Verander secret.json in config.json en bewerk config.json met eigen API gegevens.
+# Step 1: Load the API credentials from a separate configuration file
+# Copy config.json to secret.json and edit it with your own API credentials.
 with open("secret.json", "r") as config_file:
     config = json.load(config_file)
 

@@ -3,3 +3,7 @@ secrets.json
 *-env/
 /@eaDir/
 .venv
+CLAUDE.md
+.claude/
+
+.DS_Store
